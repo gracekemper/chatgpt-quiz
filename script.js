@@ -23,8 +23,8 @@ const quizQuestions = [
 ];
 
 // Define the result messages
-const resultTitle = "You are blank";
-const resultDescription = "Everyone is blank.";
+const resultTitle = "You are gay";
+const resultDescription = "Everyone is gay.";
 
 // Get the quiz form and result div
 const quizForm = document.getElementById("quiz-form");
