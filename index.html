@@ -2,105 +2,73 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Gay Quiz</title>
+    <title>Blank Quiz</title>
     <link rel="stylesheet" href="style.css">
+    <script src="quiz.js"></script>
   </head>
   <body>
-    <div class="container">
-      <h1>Are you gay?</h1>
-      <form>
-        <h2>Question 1</h2>
-        <p>How often are you hungry?</p>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question1" value="always">
-            Always
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question1" value="often">
-            Often
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question1" value="sometimes">
-            Sometimes
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question1" value="never">
-            Never
-          </label>
-        </div>
-        <h2>Question 2</h2>
-        <p>What's your favorite pet?</p>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question2" value="dog">
-            Dog
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question2" value="cat">
-            Cat
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question2" value="hamster">
-            Hamster
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question2" value="snake">
-            Snake
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question2" value="bird">
-            Bird
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question2" value="chicken">
-            Chicken
-          </label>
-        </div>
-        <h2>Question 3</h2>
-        <p>What's your favorite weather?</p>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question3" value="cloudy">
-            Cloudy
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question3" value="rainy">
-            Rainy
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question3" value="sunny">
-            Sunny
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question3" value="foggy">
-            Foggy
-          </label>
-        </div>
-        <h2>Question 4</h2>
-        <p>Would you consider yourself...</p>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question4" value="extrovert">
+    <h1>Blank Quiz</h1>
+    <form id="quiz-form" onsubmit="submitAnswers(event)">
+      <div class="question">
+        <label for="q1">How often are you hungry?</label>
+        <select id="q1">
+          <option value=""></option>
+          <option value="always">Always</option>
+          <option value="often">Often</option>
+          <option value="sometimes">Sometimes</option>
+          <option value="never">Never</option>
+        </select>
+      </div>
+      <div class="question">
+        <label for="q2">What's your favorite pet?</label>
+        <select id="q2">
+          <option value=""></option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="hamster">Hamster</option>
+          <option value="snake">Snake</option>
+          <option value="bird">Bird</option>
+          <option value="chicken">Chicken</option>
+        </select>
+      </div>
+      <div class="question">
+        <label for="q3">What's your favorite weather?</label>
+        <select id="q3">
+          <option value=""></option>
+          <option value="cloudy">Cloudy</option>
+          <option value="rainy">Rainy</option>
+          <option value="sunny">Sunny</option>
+          <option value="foggy">Foggy</option>
+        </select>
+      </div>
+      <div class="question">
+        <label for="q4">Would you consider yourself...</label>
+        <select id="q4">
+          <option value=""></option>
+          <option value="extrovert">Extrovert</option>
+          <option value="introvert">Introvert</option>
+          <option value="ambivert">Ambivert</option>
+        </select>
+      </div>
+      <div class="question">
+        <label for="q5">What's your zodiac?</label>
+        <select id="q5">
+          <option value=""></option>
+          <option value="aries">Aries</option>
+          <option value="taurus">Taurus</option>
+          <option value="gemini">Gemini</option>
+          <option value="cancer">Cancer</option>
+          <option value="leo">Leo</option>
+          <option value="virgo">Virgo</option>
+          <option value="libra">Libra</option>
+          <option value="scorpio">Scorpio</option>
+          <option value="sagittarius">Sagittarius</option>
+          <option value="capricorn">Capricorn</option>
+          <option value="aquarius">Aquarius</option>
+          <option value="pisces">Pisces</option>
+        </select>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
